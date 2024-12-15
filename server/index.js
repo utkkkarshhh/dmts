@@ -2,15 +2,15 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
-const scheduleTasks = require("./taskscheduler/taskScheduler");
+const scheduleTasks = require("./src/taskscheduler/taskScheduler");
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get("/", () => {
-  console.log("Home Route");
+app.get("/", (req, res) => {
+  res.send("App is up and running!");
 });
 
 app.post("/getTasks", (req, res) => {

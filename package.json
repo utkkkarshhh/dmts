@@ -4,8 +4,8 @@
   "description": "Task Scheduler Service for DMTS",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index",
+    "dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
@@ -13,9 +13,12 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "ngrok": "^5.0.0-beta.2",
     "nodemon": "^3.1.0",
     "pg": "^8.11.5",
+    "sequelize": "^6.37.5",
     "uuid": "^9.0.1"
   }
 }
